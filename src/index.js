@@ -1,18 +1,34 @@
 import _ from "lodash";
 import { createList } from "./create-list.js";
 import { loadBlank } from "./load-blank.js";
-import { domManip } from "./dom-manip";
-
-// Testing out webpack initial setup of index.js
-console.log("testing index.js webpack");
+import {
+  displayDefaultProject,
+  displayTheForm,
+  addItemToChecklist,
+  clearForm,
+} from "./dom-manip.js";
+import "./styles.css";
 
 // Call loadBlank upon first landing
 loadBlank();
 
-// Call DOM Manipulation module to control UI
-domManip();
+// Call DOM Manipulation module to load default project
+// domManip();
 
-// TODO: Click event modeul HERE for todo and project creations
+// Click Events Module
+let clickEventModule = function () {
+  // Click Event for displaying the form
+  const addNewToDo = document.querySelector(".add-todo-button");
+  addNewToDo.addEventListener("click", displayTheForm);
+
+  // Click Event for adding an item to the checklist on the form
+  const addToChecklist = document.querySelector(".add-to-checklist");
+  addToChecklist.addEventListener("click", addItemToChecklist);
+
+  // Click Event to clear the form
+  const clearButton = document.querySelector(".reset-button");
+  clearButton.addEventListener("click", clearForm);
+};
 
 // Call create-list.js module file and apply some objects/properties  (this will eventually be replaced by UI input)
 const myToDo = createList(
@@ -31,9 +47,6 @@ const myToDo2 = createList(
 );
 console.log("Show me properties on myToDo from index.js.....", myToDo);
 console.log("Show me properties on myToDo2 from index.js.....", myToDo2);
-
-// function component() {
-//   const element = document.createElement("div");
 
 // Lodash, now imported by this script
 element.innerHTML = _.join(["Hello", "webpack"], " ");
