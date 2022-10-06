@@ -1,12 +1,20 @@
 import _ from "lodash";
 
-function component() {
-  const element = document.createElement("div");
+// Testing out webpack initial setup of index.js
+console.log("testing index.js webpack");
 
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(["Hello", "webpack"], " ");
+// Testing out DOM manipulation via webpack
+const contentDiv = document.querySelector(".content");
+const testH1 = document.createElement("h1");
+testH1.textContent = "HELLO MUNDO...Test from Webpack.js DOM Manipulation";
+contentDiv.appendChild(testH1);
 
-  return element;
-}
+// function component() {
+//   const element = document.createElement("div");
 
-document.body.appendChild(component());
+// Lodash, now imported by this script
+element.innerHTML = _.join(["Hello", "webpack"], " ");
+
+// return element;
+
+// document.body.appendChild(component());
