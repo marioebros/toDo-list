@@ -8,6 +8,49 @@
   </head>
   <body>
     <div class="content"></div>
+    <div class="form-heading">
+      <h1>Add new "ToDo" to Project</h1>
+    </div>
+    <div class="todo-heading">
+      <h1>Current ToDo in Project</h1>
+      <div class="form">
+        <button class="add-todo-button">Add New ToDo</button>
+        <div id="add-todo-form" style="display: none">
+          <form id="add-todo">
+            <label for="Project">Project</label>
+            <select id="Project" , name="Project">
+              <option value="DefaultProject">Default Project</option>
+              <option value="Create-New-Project">Create New Project</option>
+            </select>
+            <label for="Title">Title</label>
+            <input type="text" id="Title" name="Title" />
+            <label for="Description">Description</label>
+            <input type="text" id="Description" name="Description" />
+            <label for="DueDate">Due Date</label>
+            <input type="date" id="DueDate" name="DueDate" />
+            <label for="Priority">Priority</label>
+            <select id="Priority" name="Priority">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+            <label for="CheckList">CheckList Items Added:</label>
+            <ul class="todo-ul"></ul>
+          </form>
+          <input
+            type="text"
+            id="add-to-checklist"
+            name="add-to-checklist"
+            placeholder="Type CheckList items here"
+          />
+          <button class="add-to-checklist">Add Item to CheckList</button>
+          <br />
+          <button type="submit" class="submit-button">Submit ToDo</button>
+          <button type="reset" class="reset-button">Reset Form</button>
+        </div>
+      </div>
+      <div class="books"></div>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
