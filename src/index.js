@@ -14,9 +14,21 @@ domManip();
 
 // TODO: Click event modeul HERE for todo and project creations
 
-// Call create-list.js module file and apply some objects/properties  (this will eventually)
-const myToDo = createList("Grocery Run", "Go get groceries", "10/15/2022");
-const myToDo2 = createList("Work");
+// Call create-list.js module file and apply some objects/properties  (this will eventually be replaced by UI input)
+const myToDo = createList(
+  "Grocery Run",
+  "Go get groceries",
+  "10/15/2022",
+  "Low",
+  "Meats, Eggs, Millk"
+);
+const myToDo2 = createList(
+  "Work",
+  "Do Odin Project work",
+  "10/20/2022",
+  "Medium",
+  "Read Module, Finish ToDo Project"
+);
 console.log("Show me properties on myToDo from index.js.....", myToDo);
 console.log("Show me properties on myToDo2 from index.js.....", myToDo2);
 
