@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Keep Up To-Do App</title>
+    <title>"Keep Up" ToDo App</title>
   </head>
   <body>
     <div class="content"></div>
@@ -12,9 +12,9 @@
       <h1>Add new "ToDo" to Project</h1>
     </div>
     <div class="todo-heading">
-      <h1>Current ToDo in Project</h1>
+      <h1>Current "ToDos'" in Project</h1>
       <div class="form">
-        <button class="add-todo-button">Add New ToDo</button>
+        <button class="add-todo-button">Add New "ToDo"</button>
         <div id="add-todo-form" style="display: none">
           <form id="add-todo">
             <label for="Project">Project</label>
@@ -23,11 +23,26 @@
               <option value="Create-New-Project">Create New Project</option>
             </select>
             <label for="Title">Title</label>
-            <input type="text" id="Title" name="Title" />
+            <input
+              type="text"
+              id="Title"
+              name="Title"
+              placeholder="Required Field"
+            />
             <label for="Description">Description</label>
-            <input type="text" id="Description" name="Description" />
+            <input
+              type="text"
+              id="Description"
+              name="Description"
+              placeholder="Required Field"
+            />
             <label for="DueDate">Due Date</label>
-            <input type="date" id="DueDate" name="DueDate" />
+            <input
+              type="date"
+              id="DueDate"
+              name="DueDate"
+              placeholder="Required Field"
+            />
             <label for="Priority">Priority</label>
             <select id="Priority" name="Priority">
               <option value="Low">Low</option>
