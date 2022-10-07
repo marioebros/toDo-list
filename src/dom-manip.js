@@ -1,3 +1,4 @@
+import { remove } from "lodash";
 import { loadBlank } from "./load-blank";
 
 // DOM manipulation to display the UI components
@@ -51,4 +52,39 @@ export function addItemToChecklist() {
             nodeListCheckList[i].remove();
         }
         document.getElementById("add-todo").reset();
+    }
+
+    export function displayToDo() {
+
+        // Check and Clear current display DOM, if any
+        const removeDivs = document.querySelectorAll(".card");
+        console.log("Show me the node count of the current DOM card divs...", removeDivs);
+        for (let i = 0; i < removeDivs.length; i++) {
+            removeDivs[i].remove();
+        }
+
+        // Create the display card for the display DOM
+        console.log("Display to Screen");
+        const projects = document.querySelector(".projects");
+        const card = document.createElement("div");
+        card.classList.add("card");
+        projects.appendChild(card);
+
+        // Gather data from local backend storage and initialize
+        let Title = localStorage.getItem("Title");
+        let Description = localStorage.getItem("Description");
+        let DueDate = localStorage.getItem("DueDate");
+        let Priority = localStorage.getItem("Priority");
+        let CheckList = localStorage.getItem("CheckList");
+
+        // Place data in local temp array and loop over key/value pairs and display to DOM
+        let _displayArray = { Title, Description, DueDate, Priority, CheckList };
+        console.log(_displayArray);
+
+        for (let key in _displayArray) {
+            console.log(`${key}: ${_displayArray[key]}`);
+            const para = document.createElement("p");
+            para.textContent = (`${key}: ${_displayArray[key]}`);
+            card.appendChild(para);
+        }
     }
