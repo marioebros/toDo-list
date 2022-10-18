@@ -1,0 +1,33 @@
+.remove-checklist-item {
+    justify-self: right;
+    cursor: pointer;
+}
+
+#add-to-checklist {
+    margin-bottom: 20px;
+}
+
+.submit-button, .reset-button {
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.add-to-checklist {
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.reset-button {
+    margin-left: 20px;
+}
+
+.check-list-label {
+    text-align: left;
+    padding-top: 50px;
+}
+
+.done {
+    text-decoration: line-through;
+    color: gray;
+}
