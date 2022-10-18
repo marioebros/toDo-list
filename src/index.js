@@ -6,6 +6,7 @@ import {
   displayTheForm,
   addItemToChecklist,
   clearForm,
+  displayToDo,
 } from "./dom-manip.js";
 import "./styles.css";
 
@@ -14,6 +15,9 @@ loadBlank();
 
 // Call DOM Manipulation module to load default project
 // domManip();
+
+// Call displayToDo on 1st landing
+displayToDo();
 
 // Click Events Module
 let clickEventModule = (function () {
@@ -34,27 +38,5 @@ let clickEventModule = (function () {
   submitButton.addEventListener("click", createToDo);
 })();
 
-// Call create-list.js module file and apply some objects/properties  (this will eventually be replaced by UI input)
-// const myToDo = createList(
-//   "Grocery Run",
-//   "Go get groceries",
-//   "10/15/2022",
-//   "Low",
-//   "Meats, Eggs, Millk"
-// );
-// const myToDo2 = createList(
-//   "Work",
-//   "Do Odin Project work",
-//   "10/20/2022",
-//   "Medium",
-//   "Read Module, Finish ToDo Project"
-// );
-// console.log("Show me properties on myToDo from index.js.....", myToDo);
-// console.log("Show me properties on myToDo2 from index.js.....", myToDo2);
-
 // Lodash, now imported by this script
 element.innerHTML = _.join(["Hello", "webpack"], " ");
-
-// return element;
-
-// document.body.appendChild(component());
