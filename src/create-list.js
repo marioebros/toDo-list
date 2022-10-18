@@ -29,19 +29,19 @@ export const createList = () => {
   }
 
   // Loop over the nodelist for Checklist items from the DOM and format to string
-  const nodeListCheckList = document.querySelectorAll("li");
-  let CheckListArray = [];
+  const nodeListCheckList = document.querySelectorAll(".form-li");
+  let _CheckListArray = [];
   for (let i = 0; i < nodeListCheckList.length; i++) {
     // Strip Off the "x" from end of each li then push to temp array
     let strippedCheckList = nodeListCheckList[i].textContent.replace(
       "\u00D7",
       ""
     );
-    CheckListArray.push(strippedCheckList);
+    _CheckListArray.push(strippedCheckList);
   }
 
   // Strip Off the checklist array and convert to string with commas
-  let CheckList = CheckListArray.join(", ");
+  let CheckList = _CheckListArray.join(", ");
 
   console.log("Called createList module... Creating ToDo now");
   console.log({ Title, Description, DueDate, Priority, CheckList });
