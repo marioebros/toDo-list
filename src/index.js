@@ -4,36 +4,37 @@ import { loadBlank } from "./load-blank.js";
 import {
   displayDefaultProject,
   displayTheForm,
-  addItemToChecklist,
+  addItemToCheckList,
   clearForm,
   displayToDo,
 } from "./dom-manip.js";
 import "./styles.css";
 
-// Call loadBlank upon first landing
+// Call blankProjectLoad on first land
 loadBlank();
 
+// TODO: Come back to this call if I build out this feature in the future
 // Call DOM Manipulation module to load default project
-// domManip();
+//displayDefaultProject();
 
-// Call displayToDo on 1st landing
+// Call displayToDo on first land - pulls from web local storage API (if any)
 displayToDo();
 
-// Click Events Module
+// Click events module
 let clickEventsModule = (function () {
-  // Click Event for displaying the form
+  // Click event for displaying the form
   const addNewToDo = document.querySelector(".add-todo-button");
   addNewToDo.addEventListener("click", displayTheForm);
 
-  // Click Event for adding an item to the checklist on the form
+  // Click event for adding an item to the checklist on the form
   const addToChecklist = document.querySelector(".add-to-checklist");
-  addToChecklist.addEventListener("click", addItemToChecklist);
+  addToChecklist.addEventListener("click", addItemToCheckList);
 
-  // Click Event to clear the form
+  // Click event to clear the form
   const clearButton = document.querySelector(".reset-button");
   clearButton.addEventListener("click", clearForm);
 
-  // Click Event to submit a new todo form to project
+  // Click event to submit a new todo form to project
   const submitButton = document.querySelector(".submit-button");
-  submitButton.addEventListener("click", createToDo);
+  submitButton.addEventListener("click", createList);
 })();
