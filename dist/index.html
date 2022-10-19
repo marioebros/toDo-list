@@ -13,37 +13,41 @@
     </div>
     <div class="todo-heading">
       <h1>Current "ToDos'" in Project</h1>
+    </div>
       <div class="form">
         <button class="add-todo-button">Add New "ToDo"</button>
-        <div id="add-todo-form" style="display: none">
+        <div id="add-todo-form" style="display:none">
           <form id="add-todo">
-            <label for="Project">Project</label>
+            <!-- <label for="Project">Project</label>
             <select id="Project" , name="Project">
               <option value="DefaultProject">Default Project</option>
               <option value="Create-New-Project">Create New Project</option>
-            </select>
-            <label for="Title">Title</label>
+            </select> -->
+            <label for="Title">Title:</label>
             <input
               type="text"
               id="Title"
               name="Title"
               placeholder="Required Field"
+              required
             />
-            <label for="Description">Description</label>
+            <label for="Description">Description:</label>
             <input
               type="text"
               id="Description"
               name="Description"
               placeholder="Required Field"
+              required
             />
-            <label for="DueDate">Due Date</label>
+            <label for="DueDate">Due Date:</label>
             <input
               type="date"
               id="DueDate"
               name="DueDate"
               placeholder="Required Field"
+              required
             />
-            <label for="Priority">Priority</label>
+            <label for="Priority">Priority:</label>
             <select id="Priority" name="Priority">
               <option value="Low">Low</option>
               <option value="Medium">Medium</option>
