@@ -1,4 +1,3 @@
-import { remove } from "lodash";
 import { loadBlank } from "./load-blank";
 
 // DOM manipulation to display the UI components
@@ -121,14 +120,14 @@ export function displayToDo() {
   const ul = document.createElement("ul");
   CheckListLabel.classList.add("check-list-label");
   para[para.length - 1].appendChild(ul);
-  ul.appendChild(CheckListArray);
+  ul.appendChild(CheckListLabel);
 
   console.log(
     "show me the contents of checklist from local storage...",
     CheckList
   );
   let _checkListArray = CheckList.split(",");
-  console.log("contents of temp checklistarray....", _checkListArray);
+  console.log("contents of temp checklistarray...", _checkListArray);
 
   if (CheckList !== "") {
     // Loop thru temp checklistarray to create an li and display to DOM for each

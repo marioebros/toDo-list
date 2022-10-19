@@ -20,7 +20,7 @@ loadBlank();
 displayToDo();
 
 // Click Events Module
-let clickEventModule = (function () {
+let clickEventsModule = (function () {
   // Click Event for displaying the form
   const addNewToDo = document.querySelector(".add-todo-button");
   addNewToDo.addEventListener("click", displayTheForm);
@@ -37,6 +37,3 @@ let clickEventModule = (function () {
   const submitButton = document.querySelector(".submit-button");
   submitButton.addEventListener("click", createToDo);
 })();
-
-// Lodash, now imported by this script
-element.innerHTML = _.join(["Hello", "webpack"], " ");
