@@ -2,6 +2,7 @@
   "name": "todo-list",
   "version": "1.0.0",
   "description": "Final JavaScript project as part of \"The Odin Project's\" full-stack javascript course.",
+  "main": "index.js",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
