@@ -36,7 +36,7 @@
     <img src="icons/2.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Pocket Library</h3>
+<h3 align="center">toDo List</h3>
 
   <p align="center">
     Final JavaScript project as part of "The Odin Project's" full-stack javascript course.
