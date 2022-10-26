@@ -180,7 +180,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - mariomelizalde@gmail.com
 
-Project Link: [https://github.com/marioebros/library-app](https://github.com/marioebros/toDo-list)
+Project Link: [https://github.com/marioebros/toDo-list](https://github.com/marioebros/toDo-list)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
