@@ -33,7 +33,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/marioebros/toDo-list">
-    <img src="icons/2.png" alt="Logo" width="80" height="80">
+    <img src="src/2.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">toDo List</h3>
@@ -178,7 +178,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - mariomelizalde@gmail.com
+Your Name - [@MarioElizalde12](https://twitter.com/MarioElizalde12) - mariomelizalde@gmail.com
 
 Project Link: [https://github.com/marioebros/toDo-list](https://github.com/marioebros/toDo-list)
 
